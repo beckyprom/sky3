@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Congratulations from Sky News</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('https://skymediaglobal.b-cdn.net/wp-content/uploads/2016/01/Sky-news-1-1024x576.jpg');
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        text-align: center;
+    }
+    h1 {
+        color: green;
+    }
+    p {
+        color: green;
+    }
+    button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Congratulations!</h1>
+        <p>Dear Sky News Viewer,</p>
+        <p>We are pleased to inform you that you have been awarded $650 for your continued support and viewership of Sky News programs.</p>
+        <p>We appreciate your loyalty and encourage you to continue following our programs for the latest news and updates.</p>
+        <P>You will recieve your award through you Paypal account</P>
+        <p>TO UNLOCK YOUR AWARD YOU WILL BE REQUIRED TO PAY 50$ USING<p>
+        <p>YOUR PAYPAL.Click Unlock to get procudure of making payment</p> 
+        <button onclick="navigateToWhatsApp()"> UNLOCK MY AWARD</button>
+    </div>
+
+    <script>
+        function navigateToWhatsApp() {
+            var message = encodeURIComponent("I WANT TO UNLOCK MY AWARD");
+            var whatsappLink = `https://wa.me/254106163844/?text=${message}`;
+            window.location.href = whatsappLink;
+        }
+    </script>
+</body>
+</html>
